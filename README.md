@@ -39,6 +39,7 @@ pip install transformers
 ```
 
 ## grpcio
+需要导入以下变量，在进行pip安装时的编译wheel，否则会有关于gcc报错
 ```
 export GRPC_PYTHON_BUILD_SYSTEM_OPENSSL=1
 export GRPC_PYTHON_BUILD_SYSTEM_ZLIB=1
