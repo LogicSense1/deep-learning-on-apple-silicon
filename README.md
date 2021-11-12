@@ -44,6 +44,7 @@ pip install transformers
 export GRPC_PYTHON_BUILD_SYSTEM_OPENSSL=1
 export GRPC_PYTHON_BUILD_SYSTEM_ZLIB=1
 pip install grpcio
+```
 
 ## 编译QT5
 大部分可以参考 https://github.com/qbittorrent/qBittorrent/wiki/Compilation:-macOS#building-qt
