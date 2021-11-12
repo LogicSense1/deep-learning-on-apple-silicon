@@ -44,3 +44,18 @@ pip install transformers
 export GRPC_PYTHON_BUILD_SYSTEM_OPENSSL=1
 export GRPC_PYTHON_BUILD_SYSTEM_ZLIB=1
 pip install grpcio
+
+## 编译QT5
+大部分可以参考 https://github.com/qbittorrent/qBittorrent/wiki/Compilation:-macOS#building-qt
+其中需要修改
+```
+--- a/qtbase/src/plugins/platforms/cocoa/qiosurfacegraphicsbuffer.h
++++ b/qtbase/src/plugins/platforms/cocoa/qiosurfacegraphicsbuffer.h
+@@ -43,4 +43,6 @@
+ #include <qpa/qplatformgraphicsbuffer.h>
+ #include <private/qcore_mac_p.h>
++ 
++#include <CoreGraphics/CGColorSpace.h>
+
+ QT_BEGIN_NAMESPACE
+```
