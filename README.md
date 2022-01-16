@@ -23,7 +23,7 @@ conda install pytorch torchvision -c pytorch
 ```
 
 ## scikit-learn
-scikit-learn若使用pip安装会出现编译错误的问题，可以使用condo安装
+scikit-learn若使用pip安装会出现编译错误的问题，可以使用conda安装
 ```
 conda install scikit-learn -c conda-forge
 ```
